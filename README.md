@@ -101,7 +101,7 @@ tcp   LISTEN 0   151   0.0.0.0:3306   0.0.0.0:*   users:(("mysqld",pid=2287,fd=2
 On `mysql server`:
 
 ```sql
-CREATE USER 'mysql_user'@'%' IDENTIFIED BY 'Mysql_User@2026';
+CREATE USER 'mysql_user'@'%' IDENTIFIED BY 'password_goes_here';
 GRANT ALL PRIVILEGES ON *.* TO 'mysql_user'@'%';
 FLUSH PRIVILEGES;
 ```
